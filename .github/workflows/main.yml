@@ -1,0 +1,13 @@
+name: Scheduled Workflow Example
+
+on:
+  schedule:
+    - cron: "0 2 * * *"
+
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Say Hello
+        run: echo "Hello from scheduled workflow"
+
